@@ -4,7 +4,7 @@
       "Lukas Mai <l.mai@web.de>"
    ],
    "dynamic_config" : 1,
-   "generated_by" : "ExtUtils::MakeMaker version 6.6302, CPAN::Meta::Converter version 2.120921",
+   "generated_by" : "ExtUtils::MakeMaker version 6.78, CPAN::Meta::Converter version 2.132661",
    "license" : [
       "perl_5"
    ],
@@ -21,16 +21,7 @@
    },
    "prereqs" : {
       "build" : {
-         "requires" : {
-            "Dir::Self" : "0",
-            "Test::More" : "0",
-            "strict" : "0"
-         }
-      },
-      "configure" : {
-         "requires" : {
-            "ExtUtils::MakeMaker" : "6.56"
-         }
+         "requires" : {}
       },
       "runtime" : {
          "requires" : {
@@ -40,9 +31,22 @@
             "perl" : "5.012000",
             "warnings" : "0"
          }
+      },
+      "test" : {
+         "requires" : {
+            "Dir::Self" : "0",
+            "Test::More" : "0",
+            "strict" : "0"
+         }
       }
    },
    "release_status" : "stable",
-   "resources" : {},
-   "version" : "0.01"
+   "resources" : {
+      "repository" : {
+         "type" : "git",
+         "url" : "git://github.com/mauke/Keyword-Simple",
+         "web" : "https://github.com/mauke/Keyword-Simple"
+      }
+   },
+   "version" : "0.02"
 }
