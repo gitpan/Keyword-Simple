@@ -8,7 +8,7 @@ use B::Hooks::EndOfScope;
 
 use XSLoader;
 BEGIN {
-	our $VERSION = '0.02';
+	our $VERSION = '0.03';
 	XSLoader::load __PACKAGE__, $VERSION;
 }
 
@@ -102,6 +102,9 @@ method to make the C<no Foo;> syntax work.
 =back
 
 =head1 BUGS AND LIMITATIONS
+
+This module depends on the L<pluggable keyword|perlapi.html/PL_keyword_plugin>
+API introduced in perl 5.12. Older versions of perl are not supported.
 
 Every new keyword is actually a complete statement by itself. The parsing magic
 only happens afterwards. This means that e.g. the code in the L</SYNOPSIS>
